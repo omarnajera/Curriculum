@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>curriculum</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    
+    <style>
+
+            body{
+                background:#F0EBE1;
+                width:100%;
+            }
+            header{
+                background:#55544D;
+                height:70px;
+                margin:20px;
+                padding:1px;
+                color:#fff;
+            }
+            section{
+                height:390px;
+            } 
+            footer{
+                background:#55544D;
+                height:70px;
+                margin:50px;
+                padding:23px;
+                color:#fff;
+            }
+            button{
+                background:#000 !important;
+            }
+            img{
+                width:100%;
+            }
+            .accordion-container {
+                width: 100%;
+                margin: 0 0 50px; 
+            }
+
+            #personal #education #work {
+                position: relative;
+                display: block;
+                padding: 5px;
+                font-size: 20px;
+                color: #fff;     
+            }  
+
+            .accordion-content {
+                display: none;
+                padding: 20px;
+                overflow: auto;
+            }              
+    </style>
+</head>
+    
+    <body>
+    <header>
+        <div class='container'>
+            <h2 class='text-center'><strong>CURRICULUM VITAE</strong></h2> 
+        </div>
+        </header>
+
+        <div class="container">
+            <section class='main row'>
+
+            <article class="col-xs-4 col-sm-3 col-md-4">
+            <div>
+                <p><img src="http://comps.canstockphoto.es/can-stock-photo_csp3456036.jpg"></p>   
+            </div>
+            </article>
+
+            <p class="col-xs-12 col-sm-3 col-md-4"></p>
+
+            <aside class="col-xs-12 col-sm-6 col-md-4"> 
+                <div class="accordion-container">   
+                <button id='personal' class="btn btn-primary">PERSONAL DATA</button>
+                <div class="accordion-content">
+                <dl class='dl-horizontal'>
+                    <dt>NAME</dt>
+                    <dd>Edgar Omar Najera Munoz</dd>
+                    <dt>AGE</dt>
+                    <dd>33</dd>
+                    <dt>EMAIL</dt>
+                    <dd>omarnajera19@hotmail.com</dd>
+                    <dt>PHONE NUMBER</dt>
+                    <dd>449 804 92 79</dd>
+                </dl>
+                </div>
+               </div>
+                
+                <div class="accordion-container">
+                <button id='education' class="btn btn-primary">EDUCATION</button>
+                <div class="accordion-content">
+                <dl class='dl-horizontal'>
+                    <dt>PROFILE</dt>
+                    <dd>Computer Systems Engineer (in progress)</dd>
+                    <dd>Thecnical support and maintenance (in progress)</dd>
+                </dl>
+                </div>
+                </div>
+                
+                <div class="accordion-container">
+                <button id='work' class="btn btn-primary">PROFESSIONAL EXPERIENCE</button>
+                <div class="accordion-content">
+                <dl class='dl-horizontal'><br>  
+                    <dt>ISSEA</dt>
+                    <dd>REGISTRATION AND EVALUATION OF DATA</dd>
+                    <dd>FROM 05/15 TO CURRENT</dd>
+                    <dd>Accident Prevention Department</dd>
+                    <dt>FUNCTIONAL EXPERIENCE</dt>
+                    <dd>Vial audit</dd>
+                    <dd>Basal line</dd>
+                    <dd>Capture and register of road accidents</dd>
+                    <dd>Social communication</dd>
+                    <dd>Website development</dd>
+                    <dd>Maintenance of social networks</dd>
+                    <dt>TOOLS</dt>
+                    <dd>Microsoft Office</dd>
+                    <dd>Sublime Text</dd>
+                </dl>
+                
+                    <br><br>
+                <dl class='dl-horizontal'>
+                <dt>CAREQSS</dt>
+                    <dd>Inspector of transport units</dd>
+                    <dd>FROM 03/13 TO 12/13</dd>
+                    <dt>FUNCTIONAL EXPERIENCE</dt>
+                    <dd>Review transport unit (360 process)</dd>
+                    <dd>Data base creation</dd>
+                    <dt>TOOLS</dt>
+                    <dd>Microsoft Office</dd>
+                    <dd>CAREQSS's website</dd>
+                </dl>
+
+                    <br><br>
+                <dl class= "dl-horizontal">
+                    <dt>SCANNER FORMS</dt>
+                    <dd>Commercial Adviser</dd>
+                    <dd>FROM 07/12 TO 01/13</dd>
+                    <dt>FUNCTIONAL EXPERIENCE</dt>
+                    <dd>Customer Search</dd>
+                    <dt>TOOLS</dt>
+                    <dd>Microsoft Office</dd>
+                </dl>
+
+                    <br><br>
+                <dl class= "dl-horizontal">
+                    <dt>FAMILY BUSINESS</dt>
+                    <dd>Owner</dd>
+                    <dd>FROM 9/11 TO 5/12</dd>
+                    <dt>FUNCTIONAL EXPERIENCE</dt>
+                    <dd>Search of suppliers</dd>
+                    <dd>Advertising and publicity</dd>
+                    <dd>Sales and customer care</dd>
+                    <dd>Administration and development of a general business</dd>
+                </dl>
+                </div>
+                </div>
+
+            </div>
+            </aside>
+
+        </section>
+        </div>
+        
+   
+        
+        <footer class='lead'>
+        <p class='text-center'> Aguascalientes, Ags 6 de Noviembre 2015</p>
+        </footer>
+       
+
+       <script>
+                $("#personal").click(function(){
+        
+                var contenido=$(this).next(".accordion-content");
+            
+                if(contenido.css("display")=="none"){     
+                    contenido.slideDown();         
+                $(this).addClass("open");
+                }
+
+                else{      
+                contenido.slideUp();
+                $(this).removeClass("open");  
+                }
+});
+
+                $("#education").click(function(){
+        
+                var contenido=$(this).next(".accordion-content");
+            
+                if(contenido.css("display")=="none"){     
+                    contenido.slideDown();         
+                $(this).addClass("open");
+                }
+
+                else{      
+                contenido.slideUp();
+                $(this).removeClass("open");  
+                }
+});
+
+                $("#work").click(function(){
+         
+                var contenido=$(this).next(".accordion-content");
+            
+                if(contenido.css("display")=="none"){     
+                    contenido.slideDown();         
+                $(this).addClass("open");
+                }
+
+                else{      
+                contenido.slideUp();
+                $(this).removeClass("open");  
+                }      
+});
+       </script>
+
+    </body>
+</html>
